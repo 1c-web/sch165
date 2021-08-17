@@ -1,0 +1,191 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Галерея</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Roboto:400&subset=cyrillic,cyrillic-ext&display=swap" rel="stylesheet">
+<link href="css/new4.css" rel="stylesheet">
+<link href="css/gallery.css" rel="stylesheet">
+<link rel="stylesheet" href="./magnificpopup/magnific-popup.css">
+</head>
+<body>
+<div id="wb_LayoutGrid5">
+<div id="LayoutGrid5">
+<div class="row">
+<div class="col-1">
+</div>
+<div class="col-2">
+</div>
+<div class="col-3">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid4">
+<div id="LayoutGrid4">
+<div class="col-1">
+</div>
+</div>
+</div>
+<div id="wb_home">
+<div id="home-overlay"></div>
+<div id="home">
+<div class="row">
+<div class="col-1">
+<div id="wb_Text2">
+<h1>Галерея</h1>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid1">
+<div id="LayoutGrid1">
+<div class="row">
+<div class="col-1">
+<div id="wb_Extension1">
+<div id="Extension1">
+<div id="Extension1-inner">
+<a href="images/sm_full0c7a.jpg" data-rel=""><img src="images/sm_full0c7a.jpg" alt="" />
+</a>
+<a href="images/sm_full5f90.jpg" data-rel=""><img src="images/sm_full5f90.jpg" alt="" />
+</a>
+<a href="images/sm_full8f7e.jpg" data-rel=""><img src="images/sm_full8f7e.jpg" alt="" />
+</a>
+<a href="images/sm_full40d1.jpg" data-rel=""><img src="images/sm_full40d1.jpg" alt="" />
+</a>
+<a href="images/sm_full40d1.jpg" data-rel=""><img src="images/sm_full40d1.jpg" alt="" />
+</a>
+<a href="images/sm_full63fc.jpg" data-rel=""><img src="images/sm_full63fc.jpg" alt="" />
+</a>
+<a href="images/sm_full673e.jpg" data-rel=""><img src="images/sm_full673e.jpg" alt="" />
+</a>
+<a href="images/sm_full766d.jpg" data-rel=""><img src="images/sm_full766d.jpg" alt="" />
+</a>
+<a href="images/sm_full7782.jpg" data-rel=""><img src="images/sm_full7782.jpg" alt="" />
+</a>
+<a href="images/sm_fulla6ce.jpg" data-rel=""><img src="images/sm_fulla6ce.jpg" alt="" />
+</a>
+<a href="images/sm_fullb2bf.jpg" data-rel=""><img src="images/sm_fullb2bf.jpg" alt="" />
+</a>
+<a href="images/sm_fullb498.jpg" data-rel=""><img src="images/sm_fullb498.jpg" alt="" />
+</a>
+<a href="images/sm_fulld077.jpg" data-rel=""><img src="images/sm_fulld077.jpg" alt="" />
+</a>
+<a href="images/sm_fullfd91.jpg" data-rel=""><img src="images/sm_fullfd91.jpg" alt="" />
+</a>
+</div>
+<div id="Extension1-reflection"></div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid13">
+<div id="LayoutGrid13">
+<div class="row">
+<div class="col-1">
+<picture id="wb_Picture5">
+<img src="images/divider.png" id="Picture5" alt="">
+</picture>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid9">
+<div id="LayoutGrid9">
+<div class="col-1">
+</div>
+<div class="col-2">
+<div id="wb_Text6">
+<span id="wb_uid0"><strong>Почтовый адрес: 220116&nbsp; г.Минск&nbsp; пр-т газеты &quot;Звязда&quot; 6 <br>Регистрационное<br>свидетельство №1141101732 от 21.06.2011 г. с изменениями от 06.05.2016 г</strong></span><span id="wb_uid1"><strong>.<br></strong></span>
+</div>
+</div>
+<div class="col-3">
+<div id="wb_Text1">
+<span id="wb_uid2"><strong>&#1050;&#1086;&#1085;&#1090;&#1072;&#1082;&#1090;&#1085;&#1072;&#1103; &#1080;&#1085;&#1092;&#1086;&#1088;&#1084;&#1072;&#1094;&#1080;&#1103;<br>&#1058;&#1077;&#1083;&#1077;&#1092;&#1086;&#1085;: 8-017-368-99-88<br></strong></span>
+</div>
+</div>
+</div>
+</div>
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="./magnificpopup/jquery.magnific-popup.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   $("a[href*='#LayoutGrid4']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid4').offset().top }, 600, 'easeOutCirc');
+   });
+   $("a[href*='#home']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_home').offset().top-88 }, 600, 'easeOutCirc');
+   });
+   var galleryExtension1 = 
+   {
+      radius: 240,
+      speed: 60,
+      init: function()
+      {
+         this.container = document.getElementById('wb_Extension1');
+         this.outer = document.getElementById('Extension1');
+         this.inner = document.getElementById('Extension1-inner');
+         this.images = this.inner.getElementsByTagName('a');
+         this.timer = 0;
+         this.clientX = 0;
+         this.clientY = 0;
+         this.dx = 0;
+         this.dy = 0;
+         this.rotateX = -10;
+         this.rotateY = 0;
+         this.radiusFactor = 1;
+         setTimeout(function(gallery) { gallery.initTransforms(-1, gallery) }, 750, this);
+         var imgWidth = this.container.offsetWidth * 0.25;
+         var imgHeight = imgWidth * 0.75;
+         this.radiusFactor = this.radius/this.container.offsetWidth;
+         this.inner.style.width = imgWidth + "px";
+         this.inner.style.height = imgHeight + "px";
+         var reflection = document.getElementById('Extension1-reflection');
+         reflection.style.width = this.radius * 3 + "px";
+         reflection.style.height = this.radius * 3 + "px";
+         this.inner.style.animation = "carousel " + this.speed + "s infinite linear";
+         $(window).resize({ obj: this }, function(event)
+         {
+            var gallery = event.data.obj;
+            var imgWidth = gallery.container.offsetWidth * 0.25;
+            var imgHeight = imgWidth * 0.75;
+            gallery.inner.style.width = imgWidth + "px";
+            gallery.inner.style.height = imgHeight + "px";
+            gallery.radius = (gallery.container.offsetWidth * gallery.radiusFactor);
+            gallery.initTransforms(0, gallery);
+         });
+      },
+      initTransforms: function(delay, gallery) 
+      {
+         for (var i = 0; i < gallery.images.length; i++) 
+         {
+            gallery.images[i].style.transform = "rotateX(0deg) rotateY(" + (i * (360 / gallery.images.length)) + "deg) translateZ(" + gallery.radius + "px) scale(1)";
+            gallery.images[i].style.transition = "transform 1s";
+            gallery.images[i].style.transitionDelay = ((delay != -1) ? delay :  (gallery.images.length - i) / 4) + "s";
+         }
+      },
+      updateTransform: function(elem) 
+      {
+         this.rotateX = Math.min(this.rotateX, 180);
+         this.rotateX = Math.max(this.rotateX, 0);
+         elem.style.transform = "rotateX(" + (-this.rotateX) + "deg) rotateY(" + (this.rotateY) + "deg)";
+      }
+   }
+   galleryExtension1.init();
+   $("a[data-rel='Extension1']").attr('rel', 'Extension1');
+   $("#Extension1").magnificPopup({delegate:'a', type:'image', gallery: {enabled: true, navigateByImgClick: true}});
+});
+</script>
+</body>
+</html>
